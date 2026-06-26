@@ -34,10 +34,12 @@ esta implementación me ayudó a entender cómo usar useState para almacenar el 
 haciendo que la aplicación actualice automáticamente los resultados.
 
 
+Etapa5:
+Destaca de manera visual los elementos con adopcionUrgente: true (como un contorno diferente), 
+incorpora un contador que indique cuántas mascotas requieren adopción urgente y asegúrate de que toda la aplicación funcione sin errores ni advertencias en la consola.
 
-
-
-
+esta implementación me ayudó a entender cómo aplicar estilos condicionales en React,
+resaltando de manera visual las mascotas que requieren adopción inmediata.
 
 
 

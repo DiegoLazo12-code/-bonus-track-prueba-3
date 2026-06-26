@@ -22,9 +22,16 @@ function App() {
     return coincideEspecie && coincideNombre
   })
 
+  const adopcionesUrgentes = mascotasFiltradas.filter((mascota) => mascota.adopcionUrgente).length
+
   return (
     <section id="mascotas-section">
-      <h2>Lista de mascotas</h2>
+      <div className="mascotas-header">
+        <h2>Lista de mascotas</h2>
+        <p className="contador-urgente">
+          Adopciones urgentes: <strong>{adopcionesUrgentes}</strong>
+        </p>
+      </div>
 
       <div className="filtros-container">
         <FiltroEspecie filtro={filtroEspecie} onChange={setFiltroEspecie} />

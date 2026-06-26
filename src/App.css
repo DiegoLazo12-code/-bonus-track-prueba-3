@@ -109,6 +109,21 @@
   color: var(--text-h);
 }
 
+.mascotas-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.contador-urgente {
+  margin: 0;
+  color: #b02a2a;
+  font-weight: 600;
+}
+
 .lista-mascotas {
   display: flex;
   flex-wrap: wrap;
@@ -116,6 +131,28 @@
   gap: 24px;
   max-width: 1126px;
   margin: 0 auto;
+}
+
+.mascota-card__labels {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.mascota-card__urgent {
+  display: inline-flex;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #9d1d1d;
+  background: rgba(209, 67, 67, 0.15);
+  border: 1px solid rgba(209, 67, 67, 0.4);
+}
+
+.mascota-card--urgente {
+  box-shadow: 0 0 0 3px rgba(209, 67, 67, 0.18);
 }
 
 @media (max-width: 768px) {
