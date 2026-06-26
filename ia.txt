@@ -26,7 +26,12 @@ Y en el App.jsx se renderiza ListaMascotas pasando los datos importados.
 esta implementación me ayudó a entender cómo iterar un arreglo con .map() y renderizar un componente para cada ítem de la lista.
 
 
+Etapa4:
+En FiltroEspecie.jsx, incluye un selector para filtrar por la especie:
+'Todas', 'Perro', 'Gato', 'Otro', y en App.jsx utiliza useState para almacenar el filtro seleccionado y un campo de búsqueda por nombre
 
+esta implementación me ayudó a entender cómo usar useState para almacenar el filtro elegido y el texto de búsqueda,
+haciendo que la aplicación actualice automáticamente los resultados.
 
 
 
