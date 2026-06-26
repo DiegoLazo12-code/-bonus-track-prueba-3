@@ -1,11 +1,19 @@
 Tabla:
-me ayudas a hacer esa tabla en el ANALISIS.md
+Me ayudas a hacer esa tabla en el ANALISIS.md
 me ayudo a rellenar los datos de la tabla
 
 
 Etapa1:
-importa el arreglo en App.jsx y comprueba en la consola que se carga (console.log)
+Importa el arreglo en App.jsx y comprueba en la consola que se carga (console.log)
 me fue util para mostrar los datos en la consola
+
+
+Etapa2:
+En MascotaCard.jsx, el componente recibe a través de props: nombre, raza, edad, especie, descripción, características,
+para mostrar la información de manera visual y organizada, aplicando un estilo distinto según la especie
+(un color/etiqueta diferente para perro, gato, otros).
+me fue util para mostrarme los datos de las distintas mascotas 
+
 
 
 
