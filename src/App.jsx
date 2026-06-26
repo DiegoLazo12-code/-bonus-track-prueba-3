@@ -3,9 +3,11 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
+import { mascotas } from '../data/mascota.js'
 
 function App() {
   const [count, setCount] = useState(0)
+  console.log('mascotas cargadas:', mascotas)
 
   return (
     <>

@@ -3,8 +3,9 @@ me ayudas a hacer esa tabla en el ANALISIS.md
 me ayudo a rellenar los datos de la tabla
 
 
-
-
+Etapa1:
+importa el arreglo en App.jsx y comprueba en la consola que se carga (console.log)
+me fue util para mostrar los datos en la consola
 
 
 
