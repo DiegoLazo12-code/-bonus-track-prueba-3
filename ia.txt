@@ -1,10 +1,12 @@
 Tabla:
 Me ayudas a hacer esa tabla en el ANALISIS.md
+
 me ayudo a rellenar los datos de la tabla
 
 
 Etapa1:
 Importa el arreglo en App.jsx y comprueba en la consola que se carga (console.log)
+
 me fue util para mostrar los datos en la consola
 
 
@@ -12,7 +14,22 @@ Etapa2:
 En MascotaCard.jsx, el componente recibe a través de props: nombre, raza, edad, especie, descripción, características,
 para mostrar la información de manera visual y organizada, aplicando un estilo distinto según la especie
 (un color/etiqueta diferente para perro, gato, otros).
+
 me fue util para mostrarme los datos de las distintas mascotas 
+
+
+Etapa3:
+En ListaMascotas.jsx, recibe el array de mascotas a través de props, itera sobre el array utilizando .map() y renderiza un MascotaCard por cada mascota,
+asignando adecuadamente la prop key usando el id de cada elemento (evita utilizar el índice del array).
+Y en el App.jsx se renderiza ListaMascotas pasando los datos importados.
+
+esta implementación me ayudó a entender cómo iterar un arreglo con .map() y renderizar un componente para cada ítem de la lista.
+
+
+
+
+
+
 
 
 
