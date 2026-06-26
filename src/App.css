@@ -1,112 +1,16 @@
-.mascota-card {
-  text-align: left;
-  padding: 20px;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 18px;
-  background: #ffffff;
-  box-shadow: 0 18px 32px rgba(29, 32, 45, 0.08);
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  max-width: 380px;
-}
-
-.mascota-card__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 12px;
-}
-
-.mascota-card__title {
-  margin: 0;
-  font-size: 1.3rem;
-  color: #16171d;
-}
-
-.mascota-card__meta {
-  margin: 6px 0 0;
-  color: var(--text);
-  font-size: 0.95rem;
-}
-
-.mascota-card__tag {
-  border-radius: 999px;
-  padding: 6px 12px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.mascota-card__descripcion {
-  margin: 0;
-  color: var(--text);
-  line-height: 1.7;
-}
-
-.mascota-card__features {
-  display: grid;
-  gap: 10px;
-}
-
-.mascota-card__features strong {
-  display: block;
-  color: #16171d;
-  font-size: 0.96rem;
-  margin-bottom: 6px;
-}
-
-.mascota-card__features ul {
-  list-style: disc inside;
-  margin: 0;
-  padding: 0;
-  color: var(--text);
-}
-
-.mascota-card__features li {
-  margin-bottom: 6px;
-}
-
-.mascota-card--perro {
-  border-color: #ffd4a5;
-}
-
-.mascota-card--gato {
-  border-color: #c9e8ff;
-}
-
-.mascota-card--otro {
-  border-color: #d2d6db;
-}
-
-.mascota-card__tag--perro {
-  background: rgba(255, 191, 77, 0.18);
-  color: #a15c00;
-  border: 1px solid rgba(255, 191, 77, 0.4);
-}
-
-.mascota-card__tag--gato {
-  background: rgba(114, 168, 255, 0.18);
-  color: #0f4d8a;
-  border: 1px solid rgba(114, 168, 255, 0.4);
-}
-
-.mascota-card__tag--otro {
-  background: rgba(152, 152, 152, 0.16);
-  color: #444b55;
-  border: 1px solid rgba(152, 152, 152, 0.4);
-}
-
 #mascotas-section {
-  padding: 40px 20px;
-  background: #f7f8fb;
+  min-height: 100vh;
+  padding: 48px 24px;
+  background: radial-gradient(circle at top left, rgba(59, 130, 246, 0.12), transparent 24%),
+    radial-gradient(circle at bottom right, rgba(168, 85, 247, 0.14), transparent 30%),
+    #f8fafc;
 }
 
 #mascotas-section h2 {
-  margin: 0 auto 24px;
+  margin: 0 0 10px;
+  font-size: clamp(2rem, 3vw, 2.5rem);
+  color: #0f172a;
   max-width: 1126px;
-  text-align: left;
-  color: var(--text-h);
 }
 
 .mascotas-header {
@@ -116,59 +20,29 @@
   justify-content: space-between;
   gap: 16px;
   margin-bottom: 24px;
+  max-width: 1126px;
 }
 
 .contador-urgente {
   margin: 0;
-  color: #b02a2a;
-  font-weight: 600;
-}
-
-.lista-mascotas {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 24px;
-  max-width: 1126px;
-  margin: 0 auto;
-}
-
-.mascota-card__labels {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 8px;
-}
-
-.mascota-card__urgent {
   display: inline-flex;
-  padding: 6px 10px;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  padding: 12px 18px;
+  background: rgba(248, 113, 113, 0.18);
+  border: 1px solid rgba(248, 113, 113, 0.25);
   border-radius: 999px;
-  font-size: 0.75rem;
+  color: #b91c1c;
   font-weight: 700;
-  color: #9d1d1d;
-  background: rgba(209, 67, 67, 0.15);
-  border: 1px solid rgba(209, 67, 67, 0.4);
-}
-
-.mascota-card--urgente {
-  box-shadow: 0 0 0 3px rgba(209, 67, 67, 0.18);
-}
-
-@media (max-width: 768px) {
-  .mascota-card {
-    width: 100%;
-    max-width: 100%;
-  }
 }
 
 .filtros-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  justify-content: space-between;
-  align-items: flex-end;
-  margin-bottom: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+  max-width: 1126px;
+  margin-bottom: 32px;
 }
 
 .filtro-especie,
@@ -176,28 +50,189 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  min-width: 220px;
 }
 
 .filtro-especie select,
 .busqueda-container input {
   width: 100%;
-  padding: 10px 12px;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  background: #fff;
-  color: var(--text-h);
+  padding: 14px 16px;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  border-radius: 16px;
+  background: #ffffff;
+  color: #0f172a;
+  font-size: 1rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.filtro-especie select:focus,
+.busqueda-container input:focus {
+  outline: none;
+  border-color: rgba(59, 130, 246, 0.65);
+  box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.12);
 }
 
 .filtro-especie label,
 .busqueda-container label {
-  color: var(--text-h);
-  font-weight: 600;
+  margin: 0;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.lista-mascotas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  max-width: 1126px;
+  margin: 0 auto;
+}
+
+.mascota-card {
+  text-align: left;
+  padding: 26px;
+  border: 1px solid rgba(148, 163, 184, 0.26);
+  border-radius: 24px;
+  background: #ffffff;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.mascota-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.12);
+}
+
+.mascota-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.mascota-card__labels {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.mascota-card__title {
+  margin: 0;
+  font-size: 1.4rem;
+  color: #0f172a;
+}
+
+.mascota-card__meta {
+  margin: 8px 0 0;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.mascota-card__tag {
+  border-radius: 999px;
+  padding: 8px 14px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.mascota-card__descripcion {
+  margin: 0;
+  color: #475569;
+  line-height: 1.75;
+}
+
+.mascota-card__features {
+  display: grid;
+  gap: 10px;
+}
+
+.mascota-card__features strong {
+  display: block;
+  color: #0f172a;
+  font-size: 0.96rem;
+  margin-bottom: 6px;
+}
+
+.mascota-card__features ul {
+  list-style: disc inside;
+  margin: 0;
+  padding: 0;
+  color: #475569;
+}
+
+.mascota-card__features li {
+  margin-bottom: 6px;
+}
+
+.mascota-card--perro {
+  border-color: #fbd38d;
+}
+
+.mascota-card--gato {
+  border-color: #bfdbfe;
+}
+
+.mascota-card--otro {
+  border-color: #cbd5e1;
+}
+
+.mascota-card__tag--perro {
+  background: rgba(253, 186, 116, 0.18);
+  color: #92400e;
+  border: 1px solid rgba(253, 186, 116, 0.4);
+}
+
+.mascota-card__tag--gato {
+  background: rgba(191, 219, 254, 0.24);
+  color: #1d4ed8;
+  border: 1px solid rgba(191, 219, 254, 0.45);
+}
+
+.mascota-card__tag--otro {
+  background: rgba(226, 232, 240, 0.26);
+  color: #334155;
+  border: 1px solid rgba(148, 163, 184, 0.45);
+}
+
+.mascota-card__urgent {
+  display: inline-flex;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #b91c1c;
+  background: rgba(248, 113, 113, 0.16);
+  border: 1px solid rgba(248, 113, 113, 0.3);
+}
+
+.mascota-card--urgente {
+  box-shadow: 0 0 0 3px rgba(248, 113, 113, 0.16), 0 20px 40px rgba(15, 23, 42, 0.08);
 }
 
 .sin-resultados {
   margin: 40px auto;
   text-align: center;
-  color: var(--text);
+  color: #475569;
   font-size: 1rem;
+  max-width: 600px;
+}
+
+@media (max-width: 1024px) {
+  .filtros-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  #mascotas-section {
+    padding: 36px 16px;
+  }
+
+  .lista-mascotas {
+    grid-template-columns: 1fr;
+  }
 }

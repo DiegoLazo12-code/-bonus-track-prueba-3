@@ -42,4 +42,6 @@ esta implementación me ayudó a entender cómo aplicar estilos condicionales en
 resaltando de manera visual las mascotas que requieren adopción inmediata.
 
 
+modificacion:
 
+se modifico el diseño de la pagina a uno mas sencillo
